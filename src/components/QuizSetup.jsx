@@ -97,10 +97,10 @@ function QuizSetup({onStart}){
                         onChange={(e) => setDifficulty(e.target.value)}
                         className="w-full bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-[#6447f4] focus:ring-1 focus:ring-[#6447f4] transition-all duration-200 cursor-pointer hover:border-gray-500"
                     >
-                        <option>Basic</option>
-                        <option>Easy</option>
-                        <option>Medium</option>
-                        <option>Hard</option>
+                        <option value="basic">Basic</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
                     </select>
                 </div>
 

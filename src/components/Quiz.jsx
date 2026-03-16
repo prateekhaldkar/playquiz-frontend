@@ -17,8 +17,7 @@ function Quiz({config, onFinish}){
         if(hasFetched.current) return;
         hasFetched.current = true;
 
-        // fetch(`http://localhost:8080/api/quiz/generate?topic=${config.subject} ${config.difficulty}&count=${config.count}`)
-        fetch(`https://playquiz-backend-eahngva0akhxcsdd.centralindia-01.azurewebsites.net/api/quiz/generate?topic=${config.subject} ${config.difficulty}&count=${config.count}`)
+        fetch(`https://playquiz-backend-eahngva0akhxcsdd.centralindia-01.azurewebsites.net/api/quiz/generate?topic=${config.subject}&difficulty=${config.difficulty}&count=${config.count}`)
             .then(res => {
                 if(!res.ok) throw new Error("Failed to fetch questions");
                 return res.json();
